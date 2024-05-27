@@ -1,0 +1,141 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #004080 0%, #00A86B 100%);
+    position: relative;
+  }
+  
+  .greeting {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .atm-machine {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+  
+  .option {
+    background: #004080;
+    color: white;
+    width: 350px;
+    margin: 7px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .option:hover {
+    background: #00A86B;
+  }
+  
+  .balanceEnquiryPlaceholder {
+    visibility: hidden;
+  }
+  
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup {
+    background: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popup-navbar {
+    display: flex;
+    justify-content: flex-end;
+    background: #004080;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .minimizeButton {
+    color: black;
+    margin-right: 10px;
+    font-size: 20px;
+    width: 25px;
+    border-radius: 5px;
+  }
+  
+  .closeButton {
+    background: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    width:25px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup-content {
+    flex: 1;
+    padding: 20px;
+    color: black;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #00A86B;
+  }
+  
+  .message-box {
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
